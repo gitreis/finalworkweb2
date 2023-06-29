@@ -7,4 +7,8 @@ Route::get('/', function () {
     return view('cep');
 });
 
-Route::post('/cep', [CepController::class, 'request']);
+// Route::post('cep', function () {
+//   return view('api');
+// });
+
+Route::post('cep', [CepController::class, 'request']);
